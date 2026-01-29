@@ -199,23 +199,11 @@ function App() {
     <div className="App">
       <header style={{ textAlign: 'center', marginBottom: 'var(--spacing-2xl)', position: 'relative' }}>
         <button
+          className="header-btn header-btn-clear"
           onClick={handleClearAll}
           style={{
-            position: 'absolute',
-            top: 0,
-            right: 0,
-            padding: '0.75rem 1.25rem',
             background: 'var(--bg-danger)',
             color: 'white',
-            border: 'none',
-            borderRadius: 'var(--radius-md)',
-            cursor: 'pointer',
-            fontSize: '0.875rem',
-            fontWeight: 600,
-            display: 'flex',
-            alignItems: 'center',
-            gap: '0.5rem',
-            transition: 'all 0.2s ease',
           }}
           onMouseEnter={(e) => e.target.style.transform = 'translateY(-2px)'}
           onMouseLeave={(e) => e.target.style.transform = 'translateY(0)'}
@@ -223,23 +211,11 @@ function App() {
           🗑️ Clear All Data
         </button>
         <button
+          className="header-btn header-btn-export"
           onClick={handleExportPDF}
           style={{
-            position: 'absolute',
-            top: 0,
-            right: '200px',
-            padding: '0.75rem 1.25rem',
             background: 'linear-gradient(135deg, var(--accent-primary), var(--accent-info))',
             color: 'white',
-            border: 'none',
-            borderRadius: 'var(--radius-md)',
-            cursor: 'pointer',
-            fontSize: '0.875rem',
-            fontWeight: 600,
-            display: 'flex',
-            alignItems: 'center',
-            gap: '0.5rem',
-            transition: 'all 0.2s ease',
           }}
           onMouseEnter={(e) => e.target.style.transform = 'translateY(-2px)'}
           onMouseLeave={(e) => e.target.style.transform = 'translateY(0)'}
